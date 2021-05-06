@@ -1,0 +1,23 @@
+<section id="Customer" class="container">
+    <h1>All Customers</h1>
+
+    {{#each Customer}}
+        <div class="customer">
+            <h2>Name: {{Name}}</h2>
+            <p>
+                Age : {{Age}} </br>
+                Email: {{Email}}</br>
+                Current Balance: &#x20B9;{{CurrentBalance}}</br>
+                Account Number: {{PhNo}}
+            </p>
+        </div>
+    {{else}}
+        <p> No Customers Available.</p>
+    {{/each}}
+
+    
+    <footer>
+            <p>&copy; 2021 Ashish Kumar. All Rights Reserved</p>
+    </footer>
+ 
+</section>

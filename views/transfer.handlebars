@@ -1,0 +1,25 @@
+<div class="transfer" id="Customer">
+        <h1>Instant Money Transfer</h1>
+    <div class="transfer-box">
+        <form action="/transfer" method="POST">
+            <label for="sender">From: </label></br>
+            <input type="text" id="sender" name="sender" placeholder="Account Number"></br>
+
+            <label for="receiver">To: </label></br>
+            <input type="text" id="receiver" name="receiver" placeholder="Receiver's account number"></br>
+
+            <label for="balance">Amount</label></br>
+            <input  id="balance" name="balance" placeholder="&#8377;"/></br>
+            <input type="submit" value="Transfer" class="btn btn-primary"/>
+        </form>
+
+        {{#if check}}
+            <div class="alert success">
+            <strong>{{title}}</strong> {{success}}.
+            </div>
+        {{/if}}
+    </div>
+    <footer>
+            <p>&copy; 2021 Ashish Kumar. All Rights Reserved</p>
+    </footer>
+</div>
