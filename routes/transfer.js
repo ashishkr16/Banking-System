@@ -44,7 +44,7 @@ router.post('/', async (req, res)=> {
     // await Customer.update({PhNo : sender}, {CurrentBalance: updateSender});
     await Customer.update(update,upselector);
 
-    res.render("transfer" , {title:'Success!' , success:'Transcation Successfull' , check:'true'});
+    res.render("transfer" , {title:'Success!' , success:'Transaction Successfull' , check:'true'});
   }
   catch(err){
     res.send(err);
