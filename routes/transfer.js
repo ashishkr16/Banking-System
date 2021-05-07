@@ -42,7 +42,7 @@ router.post('/', async (req, res)=> {
     await Customer.update(values, selector);
     await Customer.update(update,upselector);
 
-    res.render("transfer" , {title:'Success!' , success:'Transaction Successfull' , check:'true'});
+    res.render("transfer" , {title:'Success!' , success:'Transaction Successful' , check:'true'});
   }
   catch(err){
     res.send(err);
