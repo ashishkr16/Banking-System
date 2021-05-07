@@ -39,9 +39,7 @@ router.post('/', async (req, res)=> {
       where: {PhNo : sender}
     };
 
-    // await Customer.update({PhNo : receiver}, {CurrentBalance: updateReceiver});
     await Customer.update(values, selector);
-    // await Customer.update({PhNo : sender}, {CurrentBalance: updateSender});
     await Customer.update(update,upselector);
 
     res.render("transfer" , {title:'Success!' , success:'Transaction Successfull' , check:'true'});
