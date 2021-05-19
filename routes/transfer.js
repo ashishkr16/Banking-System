@@ -6,15 +6,7 @@ const Customer = require('../models/Customer');
 
 /* GET transfer page. */
 router.get('/', function(req, res) {
-  Customer.findAll({
-    attributes: ['Name']
-  })
-  .then(Customer => {
-    res.render('transfer',{
-      Customer
-    });
-  })
-  .catch(err=> console.log(err))
+  res.render('transfer');
 });
 
 
